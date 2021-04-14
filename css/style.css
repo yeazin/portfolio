@@ -1,41 +1,82 @@
-
-
+*{
+    margin: 0;
+    padding: 0;
+}
+html 
 body{
-    background: rgb(230,144,45);
-    background: linear-gradient(39deg, rgba(230,144,45,1) 17%, rgba(226,166,24,1) 24%, rgba(228,86,76,1) 87%);
+    height: 100%;
+}
+body{
+    background-color: #2a3137;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+}
+
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0
 }
 
 .main_wrapper{
-    width: 900px;
+    width: 100%;
     margin: 0 auto;
+    background-color: #2a3137;
+    position: relative;
+    z-index: 1;
 }
 .skill{
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
+
+    background-color: #23292d;
+}
+
+.skill_wrapper{
+    width:70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+.skill_wrapper h1{
+    color:white;
+    font-size: 2.23125rem;
+    line-height: 1.2;
+}
+.skill_wrapper p{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    color: rgba(255,255,255,.85);
+    letter-spacing: -.005em;
 }
 .skill_image{
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+    cursor: pointer;
     
 }
 .skill_image img{
     width: 100px;
     height: auto;
-    background: rgb(57 78 117);
-    background: linear-gradient(39deg, rgb(76 133 191) 17%, rgb(99 101 162) 24%, rgba(228,86,76,1) 87%);
+    background: #2a3137;
     margin: 15px;
     border-radius: 20px;
     padding:10px;
-    transition: .3s ease-in-out;
-    box-shadow: 2px 2px 7px 2px #793939;
+
 }
 .skill_image img:hover{
-    background-color: transparent;
-    background:rgb(57 78 117);
-    background:linear-gradient(39deg,rgba(228,86,76,1) 17%, rgb(99 101 162) 24%,rgb(76 133 191) 87%);
-    
+
+    background: rgb(7,8,9);
+    background: linear-gradient(39deg, rgba(7,8,9,1) 13%, rgba(6,6,6,1) 61%);
 }
